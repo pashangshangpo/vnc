@@ -54,9 +54,6 @@
     },
     "allowlist": {
       "all": false,
-      "dialog": {
-        "open": true
-      },
       "shell": {
         "all": true,
         "execute": true,
@@ -67,28 +64,12 @@
             "cmd": "n",
             "sidecar": true,
             "args": true
-          },
-          {
-            "name": "start",
-            "cmd": "start",
-            "args": true
           }
         ],
         "sidecar": true
       },
       "path": {
         "all": true
-      },
-      "fs": {
-        "all": true,
-        "scope": ["$DESKTOP/*", "**/*"]
-      },
-      "os": {
-        "all": true
-      },
-      "http": {
-        "all": true,
-        "scope": ["http://**", "https://**"]
       }
     },
     "windows": [
