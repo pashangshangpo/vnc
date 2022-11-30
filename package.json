@@ -1,6 +1,6 @@
 {
   "name": "vnc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "app": "concurrently -n web,app \"npm run dev:web\" \"npm run dev:app\"",
     "build": "npm run build:web && npm run build:app",
